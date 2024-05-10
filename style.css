@@ -10,9 +10,7 @@ del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
+fieldset, article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
@@ -49,19 +47,75 @@ table {
 
 /* ~~~ end reset ~~~ */
 
+@font-face {
+    font-family: 'norsebold';
+    src: url('fonts/norse-bold-webfont.woff2') format('woff2'),
+         url('fonts/norse-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
     display: flex;
+	height: 100vh;
 }
 
 
 .left {
     display: flex;
     flex-direction: column;
-    width: 33vw;
+    width: 33%;
+	background-image: url("assets/banner.jpg");
+	background-size: cover;
 }
 
 .right {
     display: flex;
     flex-direction: column;
     width: auto;
+}
+
+.logo-bar {
+	display: flex;
+	flex-shrink: inherit;
+	position: relative;
+	top: 20%;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 8rem;
+	background-color: rgba(0, 0, 0, 0.35);
+}
+
+.logo-img {
+	height: 7rem;
+	width: auto;
+}
+
+.logo-text {
+	font-family: 'norsebold';
+	color: white;
+	font-size: 5rem;
+
+}
+
+.right {
+	width: 67%;
+}
+
+.bun {
+	height: 33%;
+	background-color: #F9FAFB;
+
+}
+
+.content {
+	height: 34%;
+	background-color: #FFFFFF;
+	box-shadow: 5px 10px;
+}
+
+h1 {
+	font-size: 1.2rem;
 }
