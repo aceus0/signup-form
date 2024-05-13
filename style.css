@@ -116,12 +116,13 @@ body {
 	margin-left: 2rem;
 }
 
-.content {
+section.content {
 	display: flex;
 	align-items: center;
 	height: 34%;
 	background-color: #FFFFFF;
 	box-shadow: 0px 1px 5px 0px #DADBDC;
+	overflow: auto;
 }
 
 .bot-bun {
@@ -157,32 +158,66 @@ p {
 
 
 form {
-	position: relative;
-	left: 2.5rem;
+	margin-left: 2rem;
 }
 
-.left-form, .right-form {
+
+
+section.form>div {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	gap: 4em;
 }
 
 section.form {
 	display: flex;
+	flex-direction: column;
 	color: #3a3a3a;
 	font-size: .6rem;
-	gap: 4rem
 
 }
 
 form>h1 {
-	padding-bottom: 1.3rem;
+	padding-bottom: .5rem;
 }
 
 input {
 	border-radius: .2rem;
 	border: 1px solid #E5E7EB;
+	outline: none;
 }
 
 input:focus {
-	border-color: blue;
+	border-color: #6082E1;
+	box-shadow: 0px 1px 5px 0px #DADBDC;
+}
+
+input:invalid {
+	border-color: red;
+}
+
+div.buttons {
+	margin-left: 2rem;
+	margin-top: 2rem;
+	flex-shrink: inherit;
+}
+
+.log-in {
+	position: relative;
+	top: 1.7rem;
+}
+
+button.create {
+	background-color: #596D48;
+}
+
+
+input.submit {
+	background-color: #596D48;
+	color: white;
+	padding: .7rem;
+	padding-left: 2.5rem;
+	padding-right: 2.5rem;
+	border-radius: .4rem;
+	box-shadow: 0px 1px 5px 0px #DADBDC;
 }

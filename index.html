@@ -27,42 +27,48 @@
         </section>
         <section class="content">
 
-            <form action="" method="post">
+            <form id="sign-up" action="" method="post">
                 <h1>Let's do this!</h1>
                 <section class="form">
-                <div class="left-form">
-                    <p>
-                        <label for="first_name">FIRST NAME</label>
-                        <input type="text" name="first_name" id="first_name">
-                    </p>
-                    <p>
-                        <label for="email">EMAIL</label>
-                        <input type="email" name="email" id="email">
-                    </p>
-                    <p>
-                        <label for="password">PASSWORD</label>
-                        <input type="text" name="password" id="password">
-                    </p>
-                </div>
-                <div class="right-form">
-                    <p>
-                        <label for="last_name">LAST NAME</label>
-                        <input type="text" name="last_name" id="last_name">
-                    </p>
-                    <p>
-                        <label for="phone_number">PHONE NUMBER</label>
-                        <input type="tel" name="phone_number" id="phone_number">
-                    </p>
-                    <p>
-                        <label for="confirm_password">CONFIRM PASSWORD</label>
-                        <input type="password">
-                    </p>
-                </div>
+                    <div class="name-form">
+                        <p>
+                            <label for="first_name">FIRST NAME</label>
+                            <input type="text" name="first_name" id="first_name">
+                        </p>
+                        <p>
+                            <label for="last_name">LAST NAME</label>
+                            <input type="text" name="last_name" id="last_name">
+                        </p>
+                    </div>
+                    <div class="contact-form">
+                        <p>
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" id="email">
+                        </p>
+                        <p>
+                            <label for="phone_number">PHONE NUMBER</label>
+                            <input type="tel" name="phone_number" id="phone_number">
+                        </p>
+                    </div>
+                    <div class="password-form">
+                        <p>
+                            <label for="password">PASSWORD (min 8 char)</label>
+                            <input pattern=".{8,}$" type="password" name="password" id="password">
+                        </p>
+                        <p>
+                            <label for="confirm_password">CONFIRM PASSWORD</label>
+                            <input pattern=".{8,}$" type="password" name="confirm_password" id="confirm_password">
+                        </p>
+                    </div>
                 </section>
+                
             </form>
         </section>
         <section class="bot-bun">
-test
+            <div class="buttons">
+                <input class="submit" value="Create Account" type="submit" id="submit-form" form="sign-up"/>
+                <div class="log-in">Already have an account? <span ><a style="color:#596D48;text-decoration:none;" href="form.html">Log in</a></span></div>
+            </div>
         </section>
     </div>
 </body>
